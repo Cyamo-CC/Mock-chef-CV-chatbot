@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="fi">
+	<head>
+		<title>Book a table</title>
+		<meta charset="utf-8" />
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+		<link rel="stylesheet" href="Styles.css">
+	</head>
+	<body>
+		<div class="main_tausta">
+			<header>
+				<div class="container-fluid">
+					<div class="row">
+						<div class= "col-md-3 wider_text">
+							<p>Opening hours</p>
+							<p>Opening hours</p>
+							<p>Opening hours</p>
+						</div>
+						<div class="col-md-6">
+							<img src="Logo1.png" alt="sivun logo" class="img-fluid paalogo">
+						</div>
+						<div class="col-md-3">
+							<nav id="side_navi">
+								<button class="navbar-toggler " type="button" data-toggle="collapse" data-target="#drop_navi">
+									<i class="fas fa-bars navbar-toggler-icon fa-2x"></i>
+								</button>
+								<div class="collapse navbar-collapse" id="drop_navi">
+									<ul class="navbar-nav">
+										<li class="nav-item"><a class="nav-link ilmaa2 side_links" href="menu.html">Menu</a></li>
+										<li class="nav-item"><a class="nav-link side_links" href="#">Bar</a></li>
+										<li class="nav-item"><a class="nav-link side_links" href="#">Gallery</a></li>
+										<li class="nav-item"><a class="nav-link side_links" href="Book_T.html">Book a table</a></li>
+									</ul>
+								</div>	
+							</nav>
+						</div>
+					</div>	
+				</div>	
+				<div class="contaner-fluid B_back">
+					<br>
+				</div>
+				<div class="container-fluid ">
+					<div class="row">
+						<div class="col-md-12">
+							<nav class="main_nav">
+								<ul class="nav nav-tabs justify-content-center">
+									<li class="nav-item"><a href="index.html" class="nav-link Teal_links">Home</a></li>	
+									<li class="nav-item"><a href="menu.html" class="nav-link Teal_links">Menu</a></li>
+									<li class="nav-item"><a href="Contact_us.html" class="nav-link Teal_links">Contact Us!</a></li>
+								</ul>
+							</nav>
+						</div>
+					</div>	
+				</div>	
+			</header>	
+				<div class="contaner-fluid B_back">
+					<br>
+				</div>
+				<div class="container-fluid">
+					<div class="row">
+						
+						<div class="col-md-12 ilmaa teal_c">
+							<div class="Book_T_F white">
+								<h5 class="F_font keskitetty_otsikko ilmaa2 ilmaa3">Book a table!</h5>
+									<form action="#" class="Book_T_kuva">
+										<fieldset>
+											<legend>Select a Day:</legend>
+												<select class="Form_T" id="Days" name="days" size="4">
+													<option value="monday" disabled>Monday</option>
+													<option value="tuesday">Tuesday</option>
+													<option value="wednesday">Wednesday</option>
+													<option value="thursday">Thursday</option>
+													<option value="friday">Friday</option>
+													<option value="saturday" disabled>Saturday</option>
+													<option value="sunday">Sunday</option>
+												</select>
+										</fieldset>
+										<fieldset>
+											<legend>Select time:</legend>
+												<select class="Form_T" id="Time" name="Times" size="5">
+													<option value="1">16:00</option>
+													<option value="2">16:30</option>
+													<option value="4">17:00</option>
+													<option value="5" disabled>17:30</option>
+													<option value="6">18:00</option>
+													<option value="7">18:30</option>
+												</select> 
+										</fieldset>		
+											<label for="NoP" class="F_font ilmaa2">Numer of people</label>
+											<input type="text" class="input" id="NoP" name="NoP" size="10" required>
+										<fieldset class="ilmaa2">
+										<legend>Select features:</legend>
+											<label for="BWidow" class="F_font ilmaa5">Window seat</label>
+											<input type="checkbox" id="BWidow" name="BWidow" >
+											
+											<label for="Romantic" class="F_font ilmaa5">Romantic setting</label>
+											<input type="checkbox" id="Romantic" name="Romantic" >	
+											
+											<label for="Baby" class="F_font ilmaa5">Baby seat</label>
+											<input type="checkbox" id="Baby" name="Baby" >
+										<br>	
+											<label for="Booth" class="F_font ilmaa5">Booth seating</label>
+											<input type="checkbox" id="Booth" name="Booth" >	
+											
+											<label for="None" class="F_font ilmaa5">Doesn't matter</label>
+											<input type="checkbox" id="None" name="None" >	
+									  </fieldset>
+										<label for="Fname" class="F_font ilmaa2">First Name:</label>	
+										<input type="text" class="input" id="Fname" name="etunimi" size="40" required>
+										
+										<label for="Lname" class="F_font ilmaa2">Last Name:</label>
+										<input type="text" class="input" id="Lname" name="Sukunimi" size="40" required>
+											
+										<label for="sposti" class="F_font ilmaa2">E-mail:</label>
+										<input type="email" class="input" id="sposti" name="Sposti" size="40" required>
+										
+										<label for="diet" class="F_font ilmaa2">Special needs?</label>	
+										<textarea id="diet" class="W_T_area" name="diet"></textarea>
+										
+										<label for="Rcheck" class="F_font">I'm not a robot</label>
+										<input type="checkbox" id="Rcheck" name="Not_robot" required>
+									<br>	
+									<br>
+										<input type="submit" value="Submit">
+									</form> 
+							</div>
+						</div>
+					
+					</div>	
+				</div>
+				<div class="contaner-fluid B_back">
+					<br>
+				</div>
+			<footer>
+				<div class="container-fluid">
+					<div class="row">
+						<div class="col-md-3 wider_text">
+							<p>Opening hours</p>
+							<p>Opening hours</p>
+							<p>Opening hours</p>
+						</div>
+						<div class="col-md-6 teal_c">
+							<img src="Logo1.png" alt="sivun logo" class="img-fluid paalogo">
+						</div>
+						<div class="col-md-3 teal_c">
+						</div>
+					</div>
+				</div>
+			</footer>
+		</div>
+		<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+		<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+
+	</body>
+</html>	
